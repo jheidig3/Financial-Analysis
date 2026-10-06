@@ -948,7 +948,4 @@ with tab5:
     st.dataframe(trades_data, use_container_width=True, hide_index=True)
 
 st.markdown('---')
-st.caption(
-    'Quantitative Options Analytics Platform | Built with Streamlit & Plotly.'
->>>>>>> c6084af00b5437fa89b5a4223c3002c6fb70b136
-)
+st.caption('Quantitative Options Analytics Platform | Built with Streamlit & Plotly.')
