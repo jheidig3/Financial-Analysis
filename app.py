@@ -682,15 +682,14 @@ DEFAULT_UNIVERSE = pd.DataFrame([
 
 
 # SIDEBAR CONTROLS
-
 st.sidebar.title('⚙️ Engine Controls')
 st.sidebar.markdown('---')
 
 selected_ticker = st.sidebar.selectbox(
-	'Select Core Asset Ticker',
-	DEFAULT_UNIVERSE['Ticker'].tolist(),
-	index=0,
-	key='sidebar_core_asset_ticker_selectbox'
+    'Select Core Asset Ticker',
+    DEFAULT_UNIVERSE['Ticker'].tolist(),
+    index=0,
+    key='sidebar_core_asset_ticker_selectbox'
 )
 spot_override = st.sidebar.number_input(
     'Spot Price ($)',
@@ -699,7 +698,7 @@ spot_override = st.sidebar.number_input(
         ].values[0]
     ),
     step=1.0,
-key='sidebar_spot_price_input'
+    key='sidebar_spot_price_input'
 )
 iv_override = (
     st.sidebar.slider(
@@ -713,30 +712,39 @@ iv_override = (
             * 100
         ),
         step=1,
-key='sidebar_iv_slider'
+        key='sidebar_iv_slider'
     )
     / 100.0
 )
 r_rate = (
-    st.sidebar.number_input('Risk-Free Rate (%)', value=4.5, step=0.1) / 100.0
+    st.sidebar.number_input(
+        'Risk-Free Rate (%)', 
+        value=4.5, 
+        step=0.1,
+        key='sidebar_risk_free_rate_input'
+    ) / 100.0
 )
 
 st.sidebar.markdown('---')
 st.sidebar.subheader('🎯 Automated Delta Filter')
 filter_delta_range = st.sidebar.slider(
-    'Target Delta Selling Window', 0.05, 0.40, (0.15, 0.30), step=0.01
+    'Target Delta Selling Window', 0.05, 0.40, (0.15, 0.30), step=0.01,
+    key='sidebar_delta_window_slider'
 )
 filter_option_type = st.sidebar.radio(
-    'Screener Strategy', ['Put', 'Call'], index=0
+    'Screener Strategy', ['Put', 'Call'], index=0,
+    key='sidebar_screener_strategy_radio'
 )
 min_pop_threshold = (
     st.sidebar.slider(
-        'Min Probability of Profit (PoP %)', 50, 95, 70, step=5
+        'Min Probability of Profit (PoP %)', 50, 95, 70, step=5,
+        key='sidebar_pop_threshold_slider'
     )
     / 100.0
 )
 min_ann_yield = st.sidebar.slider(
-    'Min Annualized Yield (%)', 5, 50, 15, step=1
+    'Min Annualized Yield (%)', 5, 50, 15, step=1,
+    key='sidebar_ann_yield_slider'
 )
 
 
