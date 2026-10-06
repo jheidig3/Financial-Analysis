@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import math
 from datetime import datetime, timedelta
 import numpy as np
@@ -7,9 +6,9 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
-# ==========================================
+
 # PAGE CONFIGURATION
-# ==========================================
+
 st.set_page_config(
     page_title="Quantitative Options & Trading Analytics",
     page_icon="📈",
@@ -55,9 +54,9 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# ==========================================
+
 # QUANTITATIVE MATH & ANALYTICS UTILITIES
-# ==========================================
+
 
 
 def norm_cdf(x):
@@ -205,9 +204,9 @@ DEFAULT_UNIVERSE = pd.DataFrame([
     {'Ticker': 'SPY', 'Spot': 560.00, 'IV': 0.15, 'Sector': 'ETF'},
 ])
 
-# ==========================================
+
 # SIDEBAR CONTROLS
-# ==========================================
+
 st.sidebar.title('⚙️ Engine Controls')
 st.sidebar.markdown('---')
 
@@ -260,9 +259,9 @@ min_ann_yield = st.sidebar.slider(
     'Min Annualized Yield (%)', 5, 50, 15, step=1
 )
 
-# ==========================================
+
 # MAIN INTERFACE & NAVIGATION
-# ==========================================
+
 
 st.markdown(
     '<div class="main-header">Quantitative Options & Trading Analytics'
@@ -475,7 +474,7 @@ with tab5:
 st.markdown('---')
 st.caption(
     'Quantitative Options Analytics Platform | Built with Streamlit & Plotly.'
-=======
+
 import math
 from datetime import datetime, timedelta
 import numpy as np
@@ -484,9 +483,9 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
-# ==========================================
+
 # PAGE CONFIGURATION
-# ==========================================
+
 st.set_page_config(
     page_title="Quantitative Options & Trading Analytics",
     page_icon="📈",
@@ -532,9 +531,9 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# ==========================================
+
 # QUANTITATIVE MATH & ANALYTICS UTILITIES
-# ==========================================
+
 
 
 def norm_cdf(x):
@@ -682,9 +681,9 @@ DEFAULT_UNIVERSE = pd.DataFrame([
     {'Ticker': 'SPY', 'Spot': 560.00, 'IV': 0.15, 'Sector': 'ETF'},
 ])
 
-# ==========================================
+
 # SIDEBAR CONTROLS
-# ==========================================
+
 st.sidebar.title('⚙️ Engine Controls')
 st.sidebar.markdown('---')
 
@@ -737,9 +736,9 @@ min_ann_yield = st.sidebar.slider(
     'Min Annualized Yield (%)', 5, 50, 15, step=1
 )
 
-# ==========================================
+
 # MAIN INTERFACE & NAVIGATION
-# ==========================================
+
 
 st.markdown(
     '<div class="main-header">Quantitative Options & Trading Analytics'
