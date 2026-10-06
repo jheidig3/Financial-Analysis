@@ -713,6 +713,7 @@ iv_override = (
             * 100
         ),
         step=1,
+key='sidebar_iv_slider'
     )
     / 100.0
 )
