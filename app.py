@@ -882,7 +882,8 @@ with tab3:
 with tab4:
     st.subheader('📈 Payoff & Strategy Engine')
     strategy = st.selectbox(
-        'Strategy', ['Short Cash-Secured Put', 'Covered Call', 'Long Call LEAPS']
+        'Strategy', ['Short Cash-Secured Put', 'Covered Call', 'Long Call LEAPS'],
+	key='main_strategy_selection_selectbox'
     )
 
     price_range = np.linspace(spot_override * 0.70, spot_override * 1.30, 100)
