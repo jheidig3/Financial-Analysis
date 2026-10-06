@@ -687,7 +687,10 @@ st.sidebar.title('⚙️ Engine Controls')
 st.sidebar.markdown('---')
 
 selected_ticker = st.sidebar.selectbox(
-    'Select Core Asset Ticker', DEFAULT_UNIVERSE['Ticker'].tolist(), index=0
+	'Select Core Asset Ticker',
+	DEFAULT_UNIVERSE['Ticker'].tolist(),
+	index=0,
+	key='sidebar_core_asset_ticker_selectbox'
 )
 spot_override = st.sidebar.number_input(
     'Spot Price ($)',
