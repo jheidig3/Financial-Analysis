@@ -926,7 +926,7 @@ with tab4:
         yaxis_title='P&L ($)',
         template='plotly_white',
     )
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, use_container_width=True, key='main_payoff_diagram_plotly_chart')
 
 # ------------------------------------------
 # TAB 5: CONGRESSIONAL TRACKER
