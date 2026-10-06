@@ -472,7 +472,7 @@ with tab5:
     st.dataframe(trades_data, use_container_width=True, hide_index=True)
 
 st.markdown('---')
-st.caption(
+st.caption()
     'Quantitative Options Analytics Platform | Built with Streamlit & Plotly.'
 
 import math
