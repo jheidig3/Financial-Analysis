@@ -1,0 +1,27 @@
+====================================================================
+QUANTITATIVE OPTIONS STRATEGY & MODELING GUIDELINES
+====================================================================
+
+1. LEAPS BUYING STRATEGY
+--------------------------------------------------------------------
+- Primary Target: Long-term calls acting as stock replacement.
+- Expiration Window: 365+ Days to Expiration (DTE) / 1+ Year Minimum.
+- Target Delta: >= 0.80 Delta (Deep In-The-Money).
+- Core Advantage: High stock sensitivity with significantly lower 
+  capital outlay compared to buying 100 shares of underlying equity.
+
+2. AUTOMATED OPTION SELLING (CSP / COVERED CALLS)
+--------------------------------------------------------------------
+- Selling Window: 30 to 45 Days to Expiration (DTE).
+- Delta Target: 0.15 to 0.30 Delta (Out-Of-The-Money).
+- Key Metrics: High Probability of Profit (PoP >= 70%), 
+  Annualized Premium Yield >= 15%.
+
+3. QUANTITATIVE SELLER RATING SCALE (1 TO 6)
+--------------------------------------------------------------------
+- Score 6 (Optimal): High IV Percentile (>50%), DTE 30-45, 
+  Delta 0.15-0.25, no earnings/binary risk within expiration.
+- Score 4-5 (Favorable): Moderate IV, acceptable delta, solid yield.
+- Score 1-3 (Avoid): Low IV Percentile, low return on capital, 
+  imminent earnings announcement or event risk.
+====================================================================
