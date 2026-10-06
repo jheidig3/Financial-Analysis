@@ -868,6 +868,7 @@ with tab3:
         max_value=120,
         value=45,
         step=1,
+	key='main_dte_selection_slider'
     )
 
     chain_df = generate_option_chain(
