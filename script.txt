@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ====================================================================
 QUANTITATIVE OPTIONS STRATEGY & MODELING GUIDELINES
 ====================================================================
@@ -25,3 +26,11 @@ QUANTITATIVE OPTIONS STRATEGY & MODELING GUIDELINES
 - Score 1-3 (Avoid): Low IV Percentile, low return on capital, 
   imminent earnings announcement or event risk.
 ====================================================================
+=======
+streamlit
+pandas
+numpy
+scipy
+plotly
+yfinance
+>>>>>>> c6084af00b5437fa89b5a4223c3002c6fb70b136
