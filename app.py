@@ -694,12 +694,12 @@ selected_ticker = st.sidebar.selectbox(
 )
 spot_override = st.sidebar.number_input(
     'Spot Price ($)',
-    value=float(
-        DEFAULT_UNIVERSE.loc[
+    value=float(DEFAULT_UNIVERSE.loc[
             DEFAULT_UNIVERSE['Ticker'] == selected_ticker, 'Spot'
         ].values[0]
     ),
     step=1.0,
+key='sidebar_spot_price_input'
 )
 iv_override = (
     st.sidebar.slider(
